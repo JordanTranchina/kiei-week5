@@ -23,6 +23,14 @@ window.addEventListener('DOMContentLoaded', function (event) { // waiting for pa
     })
 
     let firstNameInput = document.querySelector("#firstName")
-
+    firstNameInput.addEventListener("keyup", function (event) {
+        // console.log(firstNameInput.value);
+        let greetElement = document.querySelector("#greet")
+        if (firstNameInput.value.length > 0) {
+            greetElement.innerHTML = `Hi, ${firstNameInput.value}`
+        } else {
+            greetElement.innerHTML = ""
+        }
+    })
 
 })
