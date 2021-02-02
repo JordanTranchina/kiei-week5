@@ -14,18 +14,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // 2. find the dice element
   let diceElement = document.querySelector(".dice")
+
+  // 3. replace the element's inner html with new html using the dice values above
   diceElement.innerHTML =
     `
       <img src="../images/dice/${die1}.png" class="die w-1/2 md:w-1/6">
       <img src="../images/dice/${die2}.png" class="die w-1/2 md:w-1/6">
     `
-
-
-
-
-  // 3. replace the element's inner html with new html using the dice values above
-
-
-
   // ⬆️ ⬆️ ⬆️ YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE ⬆️ ⬆️ ⬆️
 })
